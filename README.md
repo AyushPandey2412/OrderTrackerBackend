@@ -24,4 +24,3 @@ Includes full CRUD operations and a dashboard summary endpoint.
 
 ---
 
-## Project Structure
