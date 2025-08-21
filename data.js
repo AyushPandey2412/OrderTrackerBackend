@@ -11,9 +11,9 @@ async function insertDefaultOrders() {
         ('Eve', CURRENT_DATE - INTERVAL '4 days', 180.25, 'Shipped')
       ON CONFLICT DO NOTHING;
     `);
-    console.log("✅ Default orders inserted");
+    console.log("Default orders inserted");
   } catch (err) {
-    console.error("❌ Error inserting default orders:", err);
+    console.error("Error inserting default orders:", err);
   }
 }
 

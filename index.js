@@ -16,6 +16,6 @@ app.use("/orders", ordersRoutes);
 
 app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`);
-  // await createTable();
-  // await insertDefaultOrders();
+  await createTable();
+  await insertDefaultOrders();
 });
