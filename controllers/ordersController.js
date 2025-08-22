@@ -10,6 +10,16 @@ const getAllOrders = async (req, res) => {
   }
 };
 
+
+
+
+
+
+
+
+
+
+
 // GET order by id
 const getOrderById = async (req, res) => {
   const { id } = req.params;
@@ -21,6 +31,10 @@ const getOrderById = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+
+
+
 
 // CREATE new order
 const createOrder = async (req, res) => {
@@ -38,6 +52,26 @@ const createOrder = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // UPDATE order (PUT)
 const updateOrder = async (req, res) => {
@@ -72,6 +106,8 @@ const patchOrder = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+
 
 // DELETE order
 const deleteOrder = async (req, res) => {
